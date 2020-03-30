@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import './App.less';
-
+import { PutOutRecordInfo, CopyRightInfo, StatementInfo } from './modules/put-on-record/put-on-record';
 const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          网站内容正在积极建设中，精彩内容稍后与您分享
         </p>
-        <a
-          className="App-link"
-          href="http://beian.miit.gov.cn"
-          target="_blank"
-          rel="noopener noreferrer"
+
+        <div
+          className="bottom-layer"
         >
-          辽ICP备20002112号-1
-        </a>
+          <StatementInfo></StatementInfo>
+          <br />
+          <CopyRightInfo></CopyRightInfo> | <PutOutRecordInfo></PutOutRecordInfo>
+        </div>
       </header>
     </div>
   );
