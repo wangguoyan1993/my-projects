@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './App.less';
 
 const App: React.FC = () => {
   return (
@@ -12,11 +13,11 @@ const App: React.FC = () => {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="http://beian.miit.gov.cn"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          辽ICP备20002112号-1
         </a>
       </header>
     </div>
