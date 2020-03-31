@@ -8,9 +8,10 @@ export class PutOutRecordInfo extends React.Component {
                 className="info-box"
             >
                 <a
+                    title="http://beian.miit.gov.cn"
                     className="put-on-record"
                     href="http://beian.miit.gov.cn"
-                    target="_blank"
+                    target="view_window"
                     rel="noopener noreferrer"
                 >
                     辽ICP备20002112号-1
