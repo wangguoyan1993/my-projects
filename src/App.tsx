@@ -2,6 +2,8 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import { PutOutRecordInfo, CopyRightInfo, StatementInfo } from './modules/put-on-record/put-on-record';
+import './modules/plugins/weather-plugins';
+
 const App: React.FC = () => {
   return (
     <div className="App">
@@ -17,7 +19,7 @@ const App: React.FC = () => {
           <br />
           <CopyRightInfo></CopyRightInfo> | <PutOutRecordInfo></PutOutRecordInfo>
         </div>
-      </header>
+      </header>    
     </div>
   );
 }
