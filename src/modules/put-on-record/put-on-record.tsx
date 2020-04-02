@@ -1,5 +1,5 @@
 import React from "react";
-import './put-on-record.css';
+import './put-on-record.scss';
 
 export class PutOutRecordInfo extends React.Component {
     render() {
@@ -27,7 +27,7 @@ export class CopyRightInfo extends React.Component {
             <span
                 className="info-box"
             >
-                Copyright (c) 2019 migao.com 版权所有
+                Copyright (c) 2020 migao.com 版权所有
             </span>
         )
     }
