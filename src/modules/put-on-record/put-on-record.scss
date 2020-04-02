@@ -1,23 +1,26 @@
 /* 工信部备案信息a标签 */
-a.put-on-record {
-    cursor: pointer;
-    text-decoration: none;
-    color: #AAAAAA;
-    font-size: 16px;
+
+a {
+    &.put-on-record {
+        cursor: pointer;
+        text-decoration: none;
+        color: #aaaaaa;
+        font-size: 16px;
+    }
 }
 
-a.put-on-record:hover {
+.put-on-record:hover {
     cursor: pointer;
     text-decoration: none;
     color: rgb(42, 186, 253);
     font-size: 16px;
 }
 
+
 /* 信息盒子 */
-span.info-box {
+
+.info-box {
     margin: 3px 5px;
     font-size: 16px;
-    color: #AAAAAA;
+    color: #aaaaaa;
 }
-
-

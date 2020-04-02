@@ -1,6 +1,6 @@
 import React from 'react';
 // import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import { PutOutRecordInfo, CopyRightInfo, StatementInfo } from './modules/put-on-record/put-on-record';
 import './modules/plugins/weather-plugins';
 
