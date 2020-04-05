@@ -11,8 +11,7 @@ export class PutOutRecordInfo extends React.Component {
                     title="http://beian.miit.gov.cn"
                     className="put-on-record"
                     href="http://beian.miit.gov.cn"
-                    target="view_window"
-                    rel="noopener noreferrer"
+                    target="http://beian.miit.gov.cn"
                 >
                     辽ICP备20002112号-1
                 </a>

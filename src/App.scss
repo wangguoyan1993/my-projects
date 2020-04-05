@@ -1,7 +1,9 @@
+@import "./modules/styles-ref/screens.scss";
+
 .App {
     width: 100%;
     height: 100%;
-    /* text-align: center; */
+    text-align: center;
 }
 
 .App-logo {
@@ -10,15 +12,29 @@
     pointer-events: none;
 }
 
+/* 页面主题内容 */
 .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
+    background-color: #394355;
+    min-height: fit-content;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+
+    @media screen and (max-width: $iphone-6-7-8-screen-width) {
+        width : 100%;
+    }
+
+    .header-content {
+        width: 85%;
+        height: 100%;
+
+        @media screen and (max-width: $iphone-6-7-8-screen-width) {
+            width: 100%;
+        }
+    }
 }
 
 .App-link {
@@ -36,20 +52,22 @@
 
 
 /* 首页底部悬浮条 */
-
 .bottom-layer {
     text-align: center;
     width: 100%;
-    min-width: 720px;
     position: fixed;
     z-index: 302;
     bottom: 0;
-    font-size: 16px;
+    font-size: 14px;
     left: 0;
-    /* height: 40px; */
     overflow: hidden;
     zoom: 1;
     margin: 5px 0;
     background-color: transparent;
     line-height: 1.5em;
+
+    /* 适配iphone 6 7 8 以下屏幕 */
+    @media screen and (max-width : $iphone-6-7-8-screen-width) {
+        font-size: 12px;
+    }
 }
