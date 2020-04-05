@@ -1,0 +1,59 @@
+/*
+ * Filename: e:\projects\my-projects\src\modules\items-list\items-list-horizontal.scss
+ * Path: e:\projects\my-projects
+ * Created Date: Sunday, April 5th 2020, 6:00:54 pm
+ * Author: wangguoyan
+ * 
+ * Copyright (c) 2020 migao.pub
+ * Description: 项目清单样式文件
+ */
+
+@import "../styles-ref/screens.scss";
+
+/* 项目清单总类 */
+.item {
+    font-size: 18px;
+    background: transparent;
+
+    @media screen and (max-width: $iphone-6-7-8-screen-width) {
+        font-size: 14px;
+    }
+
+    /* 项目清单外壳 */
+    &.item-horizontal {
+        display: table;
+        width: 100%;
+        margin: 5px 0 0 0;
+        padding: 2px 3px;
+    }
+
+    /* 项目清单成员 */
+    &.item-horizontal-member {
+        text-align: center;
+        display: table-cell;
+        cursor: pointer;
+
+        &:hover {
+            background: -moz-linear-gradient(top, #131c27 0%, #394355 100%);
+            background: -webkit-gradient(
+                linear,
+                left top,
+                left bottom,
+                color-stop(0%, #131c27),
+                color-stop(100%, #394355)
+            );
+            background: -webkit-linear-gradient(top, #131c27 0%, #394355 100%);
+            background: -o-linear-gradient(top, #131c27 0%, #394355 100%);
+            background: -ms-linear-gradient(top, #131c27 0%, #394355 100%);
+            background: linear-gradient(to bottom, #131c27 0%, #394355 100%);
+        }
+    }
+
+    /* 项目清单成员内文字 */
+    &.item-horizontal-member-text {
+        background: transparent;
+        display: inline-block;
+        width: auto;
+        height: auto;
+    }
+}
