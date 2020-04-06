@@ -26,7 +26,7 @@ export class CopyRightInfo extends React.Component {
             <span
                 className="info-box"
             >
-                Copyright (c) 2020 migao.com 版权所有
+                Copyright (c) 2020 migao.pub 版权所有
             </span>
         )
     }

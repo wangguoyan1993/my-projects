@@ -26,42 +26,42 @@
         padding: 2px 3px;
     }
 
-    /* 项目清单成员 */
-    &.item-horizontal-member {
-        text-align: center;
-        display: inline-block;
-        cursor: pointer;
-        border-radius: 10px;
-        padding: 2px 8px;
-        box-sizing: border-box;
-        position: relative;
-        top: -2px;
-        margin: 0 5px;
-
-        &:hover {
-            padding-bottom: 0;
-            border-bottom-width: 2px;
-            border-bottom-style: solid;
-            border-bottom-color: -moz-linear-gradient(top, #357433 0%, #FFFFFF 100%);
-            border-bottom-color: -webkit-gradient(
-                linear,
-                left top,
-                left bottom,
-                color-stop(0%, #FFFFFF),
-                color-stop(100%, #FFFFFF)
-            );
-            border-bottom-color: -webkit-linear-gradient(top, #357433 0%, #FFFFFF 100%);
-            border-bottom-color: -o-linear-gradient(top, #357433 0%, #FFFFFF 100%);
-            border-bottom-color: -ms-linear-gradient(top, #357433 0%, #FFFFFF 100%);
-            border-bottom-color: linear-gradient(to bottom, #357433 0%, #FFFFFF 100%);
-        }
-    }
-
     /* 项目清单成员内文字 */
     &.item-horizontal-member-text {
         background: transparent;
         display: inline-block;
         width: auto;
         height: auto;
+    }
+}
+
+/* 项目清单成员 */
+.item-horizontal-member {
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 2px 8px;
+    box-sizing: border-box;
+    position: relative;
+    top: -2px;
+    margin: 0 5px;
+
+    &:hover {
+        padding-bottom: 0;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-color: -moz-linear-gradient(top, #357433 0%, #FFFFFF 100%);
+        border-bottom-color: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            color-stop(0%, #FFFFFF),
+            color-stop(100%, #FFFFFF)
+        );
+        border-bottom-color: -webkit-linear-gradient(top, #357433 0%, #FFFFFF 100%);
+        border-bottom-color: -o-linear-gradient(top, #357433 0%, #FFFFFF 100%);
+        border-bottom-color: -ms-linear-gradient(top, #357433 0%, #FFFFFF 100%);
+        border-bottom-color: linear-gradient(to bottom, #357433 0%, #FFFFFF 100%);
     }
 }
