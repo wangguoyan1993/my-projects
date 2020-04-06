@@ -1,5 +1,7 @@
 @import "./modules/styles-ref/screens.scss";
 
+$logo-width: 150px;
+
 .App {
     width: 100%;
     height: 100%;
@@ -7,32 +9,60 @@
 }
 
 .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 40vmin;
+    // animation: App-logo-spin infinite 20s linear;
     pointer-events: none;
 }
 
 /* 页面主题内容 */
 .App-header {
-    background-color: #394355;
+    background-color: #00633e;
     min-height: fit-content;
     height: 100%;
-    display: flex;
+    display: inline-block;
+    display: -webkit-flex;
     flex-direction: column;
     align-items: center;
     font-size: calc(10px + 2vmin);
     color: white;
 
     @media screen and (max-width: $iphone-6-7-8-screen-width) {
-        width : 100%;
+        width: 100%;
     }
 
     .header-content {
-        width: 85%;
+        width: 80%;
         height: 100%;
 
         @media screen and (max-width: $iphone-6-7-8-screen-width) {
             width: 100%;
+        }
+    }
+
+    /* 主页导航外壳 */
+    .nav-bar {
+        display: flex;
+        text-align: left;
+        width: 100%;
+        margin-top: 10px;
+        padding: 0 10px;
+        justify-content: space-between;
+
+        /* logo外壳 */
+        .logo-box {
+            display: inline-flex;
+            width: $logo-width;
+            height: fit-content;
+            
+            >img {
+                border-radius: 5px;
+            }
+        }
+
+        /* 主页导航菜单外壳 */
+        .item-box {
+            padding-bottom: 2px;
+            display: inline-flex;
+            text-align: right;
         }
     }
 }
@@ -50,7 +80,6 @@
     }
 }
 
-
 /* 首页底部悬浮条 */
 .bottom-layer {
     text-align: center;
@@ -67,7 +96,7 @@
     line-height: 1.5em;
 
     /* 适配iphone 6 7 8 以下屏幕 */
-    @media screen and (max-width : $iphone-6-7-8-screen-width) {
+    @media screen and (max-width: $iphone-6-7-8-screen-width) {
         font-size: 12px;
     }
 }
