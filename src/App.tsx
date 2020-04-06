@@ -1,11 +1,12 @@
 import React from 'react';
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.scss';
 import { PutOutRecordInfo, CopyRightInfo, StatementInfo } from './modules/put-on-record/put-on-record';
 import './modules/plugins/weather-plugins';
 import { ItemHorizontalProps, ItemHorizontalComp } from './modules/items-list/items-list-horizontal';
 
-class IndexMain extends React.Component {
+// 主页顶部导航条容器
+class NavBar extends React.Component {
   /**
    * 整理菜单数据方法
    */
@@ -34,22 +35,48 @@ class IndexMain extends React.Component {
 
   public render() {
     return (
+      <div className="nav-bar">
+        <span className="logo-box">
+          <img width="150px" height="50px" alt="logo" src={logo} className="App-logo"></img>
+        </span>
+        <span className="item-box">
+          <ItemHorizontalComp {...this.initItemListData()}></ItemHorizontalComp>
+        </span>
+      </div>
+    )
+  }
+}
+
+// 主页底部信息条
+class BottomLayer extends React.Component {
+  public render() {
+    return (
+      <div
+        className="bottom-layer"
+      >
+        <StatementInfo></StatementInfo>
+        <br />
+        <CopyRightInfo></CopyRightInfo> | <PutOutRecordInfo></PutOutRecordInfo>
+      </div>
+    )
+  }
+}
+
+class IndexMain extends React.Component {
+
+  public render() {
+    return (
       <div className="App">
         <div className="App-header">
-          <span className="header-content">
-            <ItemHorizontalComp {...this.initItemListData()}></ItemHorizontalComp>
+          <div className="header-content">
+            <NavBar></NavBar>
+
             <p>
               网站内容正在积极建设中，精彩内容稍后与您分享
-          </p>
-            <div
-              className="bottom-layer"
-            >
-              <StatementInfo></StatementInfo>
-              <br />
-              <CopyRightInfo></CopyRightInfo> | <PutOutRecordInfo></PutOutRecordInfo>
-            </div>
-          </span>
+            </p>
 
+            <BottomLayer></BottomLayer>
+          </div>
         </div>
       </div>
     );
