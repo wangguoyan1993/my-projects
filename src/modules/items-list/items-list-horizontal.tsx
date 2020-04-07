@@ -85,7 +85,7 @@ export class ItemHorizontalComp extends React.Component {
                 {
                     this.props.items.map((item) => {
                         return (
-                            <ItemHorizontalMember {...item}></ItemHorizontalMember>
+                            <ItemHorizontalMember {...item} key={`items-list-horizontal-item-${item.text}`}></ItemHorizontalMember>
                         )
                     })
                 }

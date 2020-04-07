@@ -70,6 +70,7 @@ class IndexMain extends React.Component {
         <div className="App-header">
           <div className="header-content">
             <NavBar></NavBar>
+            <hr />
 
             <p>
               网站内容正在积极建设中，精彩内容稍后与您分享
