@@ -16,8 +16,8 @@ $logo-width: 150px;
 /* 页面主题内容 */
 .App-header {
     background-color: #00633e;
-    min-height: fit-content;
-    height: 100%;
+    min-height: 100vh;
+    height: auto;
     display: inline-block;
     display: -webkit-flex;
     flex-direction: column;

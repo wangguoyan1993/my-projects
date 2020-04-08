@@ -1,0 +1,17 @@
+/*
+ * Filename: e:\projects\my-projects\src\modules\styles-ref\scroll-hide.scss
+ * Path: e:\projects\my-projects
+ * Created Date: Thursday, April 9th 2020, 12:05:17 am
+ * Author: wangguoyan
+ * Description: 隐藏滚动条样式
+ * 
+ * Copyright (c) 2020 migao.pub
+ */
+
+@mixin scroll-bar-hide {
+    -ms-overflow-style: none;   /*IE*/
+    scrollbar-width: none;      /*FF*/
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

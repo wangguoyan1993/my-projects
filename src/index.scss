@@ -1,4 +1,7 @@
+@import './modules/styles-ref/scroll-hide.scss';
+
 html {
+  @include scroll-bar-hide;
   height: 100%;
   body {
     height:100%;
