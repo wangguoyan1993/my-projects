@@ -1,17 +1,19 @@
 /* 工信部备案信息a标签 */
+$info-text-color: #DDDDDD;
+$link-hover-color: #0000e2;
 
 a {
     &.put-on-record {
         cursor: pointer;
         text-decoration: none;
-        color: #aaaaaa;
+        color: $info-text-color;
     }
 }
 
 .put-on-record:hover {
     cursor: pointer;
     text-decoration: none;
-    color: rgb(42, 186, 253);
+    color: $link-hover-color;
 }
 
 
@@ -19,5 +21,5 @@ a {
 
 .info-box {
     margin: 3px 5px;
-    color: #aaaaaa;
+    color: $info-text-color;
 }

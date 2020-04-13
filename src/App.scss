@@ -1,4 +1,5 @@
 @import "./modules/styles-ref/screens.scss";
+@import "./modules/styles-ref/colors.scss";
 
 $logo-width: 150px;
 
@@ -15,7 +16,7 @@ $logo-width: 150px;
 
 /* 页面主题内容 */
 .App-header {
-    background-color: #00633e;
+    background-color: $main-color;
     min-height: 100vh;
     height: auto;
     display: inline-block;
